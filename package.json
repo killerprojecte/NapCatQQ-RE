@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "version": "0.0.1",
+  "main": "./liteloader.cjs",
   "scripts": {
     "build:shell": "pnpm --filter napcat-shell run build || exit 1",
     "build:shell:dev": "pnpm --filter napcat-shell run build:dev || exit 1",
@@ -17,6 +18,17 @@
     "test:ui": "pnpm --filter napcat-test run test:ui",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
+  },
+  "qwqnt": {
+    "name": "NapCat",
+    "icon": "./logo.png",
+    "inject": {
+      "preload": "./preload.cjs",
+      "renderer": "./renderer.js"
+    },
+    "dependencies": {
+      "qwqnt-halo": "^1.0.0"
+    }
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^16.0.3",

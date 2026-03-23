@@ -16,17 +16,6 @@
       "import": "./*"
     }
   },
-  "qwqnt": {
-    "name": "NapCat",
-    "icon": "./logo.png",
-    "inject": {
-      "preload": "./preload.cjs",
-      "renderer": "./renderer.js"
-    },
-    "dependencies": {
-      "qwqnt-halo": "^1.0.0"
-    }
-  },
   "dependencies": {
     "napcat-core": "workspace:*",
     "napcat-common": "workspace:*",
