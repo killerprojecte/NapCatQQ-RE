@@ -32,6 +32,7 @@ const FrameworkBaseConfigPlugin: PluginOption[] = [
       { src: './renderer.js', dest: 'dist' },
       { src: '../../package.json', dest: 'dist' },
       { src: '../../logo.png', dest: 'dist' },
+      { src: './manifest.json', dest: 'dist' },
     ],
   }),
   nodeResolve(),
