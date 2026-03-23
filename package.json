@@ -27,7 +27,7 @@
       "renderer": "./renderer.js"
     },
     "dependencies": {
-      "qwqnt-halo": "^1.0.0"
+      "qwqnt-hako": "^1.0.0"
     }
   },
   "devDependencies": {
